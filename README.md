@@ -1,10 +1,12 @@
 # Random Quote Generator
 Languages: HTML, CSS, Javascript
 
-This is a basic random quote generator website that shows random quotes by various people. Basic functions as implemented are refreshing to get new quotes and copying the generated quote by the copy text button;
+This is a basic random quote generator website that shows random quotes by various people. Basic functions as implemented are refreshing to get new quotes and copying the generated quote by the copy text button.
+
+Update (May 31st):
+A new button is added in the website to toggle dark mode and light mode. The website will initally load in light mode and switched when the button is triggered.
 
 ### Further Developoment
-- Dark Mode
 - Deploying as static web (using AWS)
 - Adding pages for credit/acknowledgement
 - random background images comes with quotes
