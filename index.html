@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content = "width=device-width,initial-scale =1.0">
+        <title> Random Quote of the day </title>
+        <script src="https://kit.fontawesome.com/cdb8f8dd51.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "quote-box">
+            <h2> Quote of The day </h2>
+            <blockquote id = "quote"> Loading... </blockquote>
+            <span id ="author"> Loading author... </span>
+            <div>
+                <button onclick = "getQuote(api_url)"><i class="fa-solid fa-arrows-rotate fa-2xl"></i> </button>
+                <button onclick = "copyText()"> <i class="fa-solid fa-copy fa-2xl"></i> </button>
+            </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
