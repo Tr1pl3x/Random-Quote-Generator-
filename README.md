@@ -7,6 +7,7 @@ This is a basic random quote generator website that shows random quotes by vario
 - Dark Mode
 - Deploying as static web (using AWS)
 - Adding pages for credit/acknowledgement
+- random background images comes with quotes
 - Smoothening animations
 
 ### Acknowledgements
