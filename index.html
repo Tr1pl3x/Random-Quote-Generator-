@@ -9,11 +9,21 @@
     <body>
         <div class = "quote-box">
             <h2> Quote of The day </h2>
-            <blockquote id = "quote"> Loading... </blockquote>
-            <span id ="author"> Loading author... </span>
+            <blockquote id = "quote"> Quote goes here... </blockquote>
+            <span id ="author"> Author... </span>
             <div>
-                <button onclick = "getQuote(api_url)"><i class="fa-solid fa-arrows-rotate fa-2xl"></i> </button>
-                <button onclick = "copyText()"> <i class="fa-solid fa-copy fa-2xl"></i> </button>
+                <button onclick = "getQuote(api_url)">
+                    <i class="fa-solid fa-arrows-rotate fa-2xl"></i>
+                    <span class="text-container">new quote</span>
+                </button>
+                <button onclick = "copyText()">
+                    <i class="fa-solid fa-copy fa-2xl"></i>
+                    <span class="text-container">copy quote</span>
+                </button>
+                <button id="darkMode" onclick="toggleDarkMode()">
+                    <i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+                    <span class="text-container">dark mode?</span>
+                </button>
             </div>
         </div>
     </body>

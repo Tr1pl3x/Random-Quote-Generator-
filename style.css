@@ -7,12 +7,24 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+:root{
+    --primary-color: #ffe5bd;
+    --secondary-color:rgb(23, 124, 229);
+    --supp-color: #fff;
+}
+
+.dark-theme{
+    --primary-color: #222222;
+    --secondary-color:rgb(255, 116, 23);
+    --supp-color: #7f7f7f;
+}
+
 body{
-    background: #ffe5bd;
+    background: var(--primary-color);
 }
 
 .quote-box{
-    background: #fff;
+    background: var(--supp-color);
     width: 700px;
     position: absolute;
     top: 50%;
@@ -59,16 +71,6 @@ body{
     position: relative;
 }
 
-.quote-box span::before{
-    content: '';
-    height: 2px;
-    width: 20px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    top: 50%;
-    left: -30%;
-}
-
 .quote-box div{
     width: 100%;
     margin-top: 50px;
@@ -77,10 +79,11 @@ body{
 }
 
 .quote-box button {
-    background: rgb(23, 124, 229);
+    position: relative;
+    background: var(--secondary-color);
     color: #fff;
     border-radius: 50px;
-    border: 1px solid rgb(23, 124, 229);
+    border: 1px solid var(--secondary-color);
     width: 60px;
     height: 60px;
     align-items: center;
@@ -91,4 +94,39 @@ body{
 
 .quote-box button:hover {
     opacity: 0.8;
+}
+
+/* text-container box */
+.quote-box button .text-container {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the text-container above the button */
+    left: 50%;
+    margin-left: -60px; /* Use half of the width to center the text-container */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* text-container arrow */
+.quote-box button .text-container::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the text-container */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+
+.quote-box button:hover .text-container {
+    visibility: visible;
+    opacity: 1;
 }
