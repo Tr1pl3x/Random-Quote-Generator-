@@ -7,7 +7,7 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <div class = "quote-box">
+        <div class = "quote-box" id = "bg-img">
             <h2> Quote of The day </h2>
             <blockquote id = "quote"> Quote goes here... </blockquote>
             <span id ="author"> Author... </span>
@@ -16,9 +16,13 @@
                     <i class="fa-solid fa-arrows-rotate fa-2xl"></i>
                     <span class="text-container">new quote</span>
                 </button>
+                <button onclick="getImg()">
+                    <i class="fa-regular fa-image fa-2xl"></i>
+                    <span class="text-container">new image</span>
+                </button>
                 <button onclick = "copyText()">
                     <i class="fa-solid fa-copy fa-2xl"></i>
-                    <span class="text-container">copy quote</span>
+                    <span class="text-container">copy</span>
                 </button>
                 <button id="darkMode" onclick="toggleDarkMode()">
                     <i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
